@@ -1,0 +1,24 @@
+span {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.mat-list-item{
+    text-decoration: none;
+    color: black;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.mat-list-item:hover {
+    color: blueviolet;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 2px;
+}
+a:hover {
+    color: blueviolet;
+}

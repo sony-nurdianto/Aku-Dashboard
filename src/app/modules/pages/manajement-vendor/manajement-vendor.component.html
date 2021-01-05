@@ -1,0 +1,16 @@
+<mat-list>
+    <ng-container>
+        <mat-list-item (click)="openSubMnu()">
+            <mat-icon>content_paste</mat-icon> <span>Manajement Vendor</span>
+            <mat-icon>{{isSubmenuOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}</mat-icon>
+        </mat-list-item>
+        <mat-list *ngIf="isSubmenuOpen" style="margin-left:30px;">
+            <div *ngFor="let link of navLinkItem">
+                <mat-list-item>
+                    <a [routerLink]="[link.route]">{{link.link}}</a>
+                </mat-list-item>
+            </div>
+
+        </mat-list>
+    </ng-container>
+</mat-list>
