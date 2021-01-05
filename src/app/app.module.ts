@@ -20,6 +20,7 @@ import { ManajementInventoryComponent } from './modules/pages/manajement-invento
 import { ManajementVendorComponent } from './modules/pages/manajement-vendor/manajement-vendor.component'
 import { ManajementResepComponent } from './modules/pages/manajement-resep/manajement-resep.component'
 import { RemotePrinterComponent } from './modules/pages/remote-printer/remote-printer.component'
+import { LoginComponent } from './modules/pages/login/login.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { RemotePrinterComponent } from './modules/pages/remote-printer/remote-pr
     ManajementInventoryComponent,
     ManajementVendorComponent,
     ManajementResepComponent,
-    RemotePrinterComponent
+    RemotePrinterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

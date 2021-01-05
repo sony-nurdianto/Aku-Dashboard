@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+// import { AuthGuard } from './auth/auth-guard.service';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     loadChildren: () => import('./modules/pages/home/home.module').then(m => m.HomeModule)
   },
   {
@@ -73,6 +74,10 @@ const routes: Routes = [
   {
     path: 'keluar',
     loadChildren: () => import('./modules/pages/keluar/keluar.module').then(m => m.KeluarModule)
+  },
+  {
+    path: '',
+    loadChildren: () => import('./modules/pages/login/login.module').then(m => m.LoginModule)
   }
 ];
 
